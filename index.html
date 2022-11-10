@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Base Apparel - Coming Soon</title>
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Base Apparel's company logo" />
+      </div>
+      <div class="main-content">
+        <h1 class="main-heading">We're <span>coming soon</span></h1>
+
+        <p class="main-paragraph">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+
+        <h1 class="confirmation-heading hide">
+          Thank you <span>& welcome!</span>
+        </h1>
+
+        <p class="confirmation-paragraph hide">
+          Hello fellow shopper! Thank you for joining our newsletter. You will
+          be one of the first to know when we offically open and get access to
+          our exclusive deals.
+        </p>
+
+        <form name="form" class="form" id="form" action="/" novalidate>
+          <label for="email" class="sr-only">Email Adress</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="email"
+            placeholder="Email Address"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          />
+          <span>Enter a valid email</span>
+          <button type="submit" class="submit" id="submit"></button>
+        </form>
+      </div>
+
+      <picture>
+        <source
+          media="(min-width: 900px )"
+          srcset="./images/hero-desktop.jpg"
+        />
+        <img src="../images/hero-mobile.jpg" alt="" aria-hidden="true" />
+      </picture>
+    </main>
+    <script src="/javascript/index.js"></script>
+  </body>
+</html>
