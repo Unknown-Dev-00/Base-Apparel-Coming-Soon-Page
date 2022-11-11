@@ -1,6 +1,6 @@
 const form = document.querySelector("#form");
 const email = document.querySelector(".email");
-const mainPage = document.querySelector(".main-content");
+const mainPage = document.querySelector(".main-page");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
